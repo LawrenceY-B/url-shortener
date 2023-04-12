@@ -1,0 +1,35 @@
+:host{
+    width: 100%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: var(--Dark-Violet);
+    background-image: var(--ImgBUrl);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    h1{
+        font-family: 'Poppins Bold';
+        font-size: 24px;
+        color: #fff;
+        margin: 20px;
+    }
+    button {
+        border: none;
+        color: #fff;
+        background-color: var(--Cyan);
+        border-radius: 30px;
+        padding: 6px 14px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+    button:hover{
+        background-color: var(--Cyan-hover);
+        transform: scale(1);
+    }
+}

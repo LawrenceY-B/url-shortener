@@ -1,5 +1,59 @@
-:host{width: 100%;}
-section{
+:host {
     width: 100%;
-    background-color: var(--Grayish_Violet);
+    background-color: #f8f5fc;
+    height: 100%;
+
+}
+
+.shortener-container {
+
+    margin: 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .text-box,
+    .header,
+    .home-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .header {
+            width: 40%;
+
+            p {
+                color: var(--Grayish_Violet);
+                text-align: center;
+            }
+        }
+
+
+    }
+
+    .home-card {
+        position: relative;
+
+        .my-hr {
+            position: absolute;
+            height: 5px;
+            border: none;
+            width: 50%;
+            background-color: var(--Cyan);
+            top: 40%;
+          
+        }
+
+        overflow-y: hidden;
+        height: 420px;
+        padding: 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
 }

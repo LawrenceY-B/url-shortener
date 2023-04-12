@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './lib/header/header.component';
 import { FooterComponent } from './lib/footer/footer.component';
 import { ShortenComponent } from './lib/shorten/shorten.component';
+import { CardComponent } from './lib/card/card.component';
 
 
 
@@ -10,7 +11,8 @@ import { ShortenComponent } from './lib/shorten/shorten.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ShortenComponent
+    ShortenComponent,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { ShortenComponent } from './lib/shorten/shorten.component';
   exports:[
     HeaderComponent,
     FooterComponent,
-    ShortenComponent
+    ShortenComponent,
+    CardComponent
   ]
 })
 export class SharedModule { }
