@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IShortenedUrl } from 'src/assets/model/shorten.model';
 
 @Component({
   selector: 'app-middle',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./middle.component.scss']
 })
 export class MiddleComponent implements OnInit {
+// results!: IShortenedUrl
 
   constructor() { }
 

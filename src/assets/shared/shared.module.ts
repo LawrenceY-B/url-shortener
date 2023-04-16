@@ -4,6 +4,7 @@ import { HeaderComponent } from './lib/header/header.component';
 import { FooterComponent } from './lib/footer/footer.component';
 import { ShortenComponent } from './lib/shorten/shorten.component';
 import { CardComponent } from './lib/card/card.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,6 +17,7 @@ import { CardComponent } from './lib/card/card.component';
   ],
   imports: [
     CommonModule,
+    FormsModule
   ],
   exports:[
     HeaderComponent,
