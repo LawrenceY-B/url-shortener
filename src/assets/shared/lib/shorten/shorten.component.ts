@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IShortenedUrl } from 'src/assets/model/shorten.model';
-// import { ShortenedService } from '../../services/urlshorten.service';
+import { ShortlyService } from 'src/assets/services/urlShorten.service';
 @Component({
   selector: 'app-shorten',
   templateUrl: './shorten.component.html',
@@ -10,15 +10,15 @@ export class ShortenComponent {
   url: string = ""
 
   constructor(
-    // private ShortenedService: ShortenedService
+    private APIservice: ShortlyService,
   ) { }
   
-  // saveUrl(url: string){
-  //   this.ShortenedService.getShortUrl(url).subscribe((data: IShortenedUrl) =>{
-  //     console.log(data)
-  //   })
-  //   // this.saveSchool(data.id)
-  // }
+  saveUrl(url: string){
+    this.APIservice.getUrlData(url).subscribe((data: IShortenedUrl) =>{
+      console.log(data)
+    })
+    // this.saveSchool(data.id)
+  }
 
   ngOnInit(): void {
   }

@@ -7,7 +7,6 @@ import { Component, HostListener, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'url-shortener';
-  // circle!: HTMLDivElement;
 
   ngOnInit(): void {
   }

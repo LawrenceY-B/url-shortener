@@ -7,7 +7,7 @@ import { IShortenedUrl } from 'src/assets/model/shorten.model';
   styleUrls: ['./middle.component.scss']
 })
 export class MiddleComponent implements OnInit {
-// results!: IShortenedUrl
+results!: IShortenedUrl
 
   constructor() { }
 
