@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { IShortenedUrl } from 'src/assets/model/shorten.model';
 
 @Component({
@@ -7,11 +7,16 @@ import { IShortenedUrl } from 'src/assets/model/shorten.model';
   styleUrls: ['./middle.component.scss']
 })
 export class MiddleComponent implements OnInit {
-results!: IShortenedUrl
+  @Input() results: Array<IShortenedUrl>=[]
 
-  constructor() { }
+
+  constructor() { 
+
+  }
 
   ngOnInit(): void {
+    
   }
+fetchAllResults(){}
 
 }

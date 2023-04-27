@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { IShortenedUrl } from 'src/assets/model/shorten.model';
 import { ShortlyService } from 'src/assets/services/urlShorten.service';
 @Component({
@@ -8,6 +8,7 @@ import { ShortlyService } from 'src/assets/services/urlShorten.service';
 })
 export class ShortenComponent {
   url: string = ""
+  @Output() userData = new EventEmitter<any>();
 
   constructor(
     private APIservice: ShortlyService,
@@ -16,7 +17,9 @@ export class ShortenComponent {
   saveUrl(url: string){
     this.APIservice.getUrlData(url).subscribe((data: IShortenedUrl) =>{
       console.log(data)
+      this.userData.emit(data)
     })
+
     // this.saveSchool(data.id)
   }
 

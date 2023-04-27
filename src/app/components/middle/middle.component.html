@@ -1,8 +1,8 @@
-<section class="shortener-container">
-    <article *ngFor="let item in results">
+<section class="shortener-container" (userData)="results">
+    <article *ngFor="let item of results" >
         <div class="urlbox">
-            <p>{{item.LongUrl}}</p>
-            <p>{{item.ShortUrl}}</p>
+            <p>{{item.result.original_link }}</p>
+            <p>{{item.result.short_link }}</p>
             <button>Copy</button>
         </div>
     </article>

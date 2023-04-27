@@ -23,7 +23,7 @@
         background-image: var(--ImgsUrl);
         background-position: center;
         background-size: cover;
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         input[type=url]{
             padding: 10px 14px;
             margin: 5px;
@@ -46,4 +46,18 @@
         }
     }
 
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        .input-container{
+            flex-direction: column;
+
+            input[type=submit],input[type=url]{
+                margin: 0;
+                padding: 10px;
+                width: 95%;
+            }
+
+        }
+    }
 }
