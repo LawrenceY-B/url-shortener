@@ -1,15 +1,25 @@
-
 <nav>
-    <div class="top-left">
-        <h3>Shortly</h3>
-        <div class="links">
-            <p>Features</p>
-            <p>Pricing</p>
-            <p>Resources</p>
-        </div>
+  <div
+    class="hamburger"
+    id="hamburger-9"
+    (click)="toggleMenu()"
+    [class.active]="menuOpen"
+  >
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <h3>Shortly</h3>
+  <div class="menu" [class.active]="menuOpen">
+    <div class="links">
+      <p>Features</p>
+      <p>Pricing</p>
+      <p>Resources</p>
     </div>
-    <div class="top-right">
-        <p>Login</p>
-        <button>Sign Up</button>
-    </div>
+<span>
+
+    <p>Login</p>
+    <button>Sign Up</button>
+</span>
+  </div>
 </nav>

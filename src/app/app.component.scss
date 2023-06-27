@@ -8,7 +8,6 @@ main {
   align-items: center;
   padding: 0px 40px;
   // position: relative;
-  
 }
 .details-container {
   width: 100%;
@@ -17,49 +16,43 @@ main {
   align-items: center;
 
   .text-container {
-      width: 50%;
-      display: flex;
-      gap: 10px;
-      flex-direction: column;
-      align-items: flex-start;
-      h1 {
-          color: var(--Dark-Violet);
-          font-family: 'Poppins Bold';
-          font-size: 64px;
-      }
-      p {
-          color: var(--Grayish_Violet);
-          
-      }
-      button {
-          border: none;
-          color: #fff;
-          background-color: var(--Cyan);
-          border-radius: 30px;
-          padding: 6px 14px;
-          font-size: 18px;
-          cursor: pointer;
-          transition: all 1s ease;
-      }
-      button:hover{
-          background-color: var(--Cyan-hover);
-          transform: scale(1);
-      }
-
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    h1 {
+      color: var(--Dark-Violet);
+      font-family: "Poppins Bold";
+      font-size: 64px;
+    }
+    p {
+      color: var(--Grayish_Violet);
+    }
+    button {
+      border: none;
+      color: #fff;
+      background-color: var(--Cyan);
+      border-radius: 30px;
+      padding: 6px 14px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 1s ease;
+    }
+    button:hover {
+      background-color: var(--Cyan-hover);
+      transform: scale(1);
+    }
   }
 
   .img-container {
-
-      width: 50%;
-      img{
-          height: 80%;
-      }
-
+    width: 50%;
+    img {
+      height: 80%;
+    }
   }
-
 }
 .shortener-container {
-
   margin: 80px 0px;
   display: flex;
   flex-direction: column;
@@ -69,66 +62,82 @@ main {
   .text-box,
   .header,
   .home-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 
-      .header {
-          width: 40%;
+    .header {
+      width: 40%;
 
-          p {
-              color: var(--Grayish_Violet);
-              text-align: center;
-          }
+      p {
+        color: var(--Grayish_Violet);
+        text-align: center;
       }
-
-
+    }
   }
 
   .home-card {
-      position: relative;
+    position: relative;
 
-      .my-hr {
-          position: absolute;
-          height: 5px;
-          border: none;
-          width: 50%;
-          background-color: var(--Cyan);
-          top: 40%;
-        
-      }
+    .my-hr {
+      position: absolute;
+      height: 5px;
+      border: none;
+      width: 50%;
+      background-color: var(--Cyan);
+      top: 40%;
+    }
 
-      overflow-y: hidden;
-      height: 420px;
-      padding: 40px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-
+    overflow-y: hidden;
+    height: 420px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
   }
-
 }
 @media only screen and (max-width: 768px) {
- .shortener-container{
-  .text-box{
-      .header{
-          width: 95%;
-      }
+  main {
+    padding: 0px;
   }
-  
-  .home-card{
+  .details-container {
+    flex-direction: column-reverse;
+    .text-container,
+    .img-container {
+      align-items: center;
+      width: 95%;
+      h1 {
+        text-align: center;
+        font-size: 42px;
+      }
+      p {
+        text-align: center;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .shortener-container {
+    .text-box {
+      .header {
+        width: 95%;
+      }
+    }
+
+    .home-card {
       flex-direction: column;
       padding: 5px;
       height: 100%;
-      .my-hr{
-          width: 200%;
-          transform: rotate(90deg);
+      .my-hr {
+        width: 200%;
+        transform: rotate(90deg);
       }
+    }
   }
- }
 }
-app-shorten{
+app-shorten {
   transform: translate(3%, 60%);
 }
