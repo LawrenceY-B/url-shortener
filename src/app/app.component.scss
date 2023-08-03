@@ -84,7 +84,7 @@ main {
       .shortlink {
         color: var(--Cyan);
       }
-      button {
+      input[type=submit] {
         border: none;
         color: #fff;
         background-color: var(--Cyan);

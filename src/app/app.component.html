@@ -32,7 +32,7 @@
         <p>{{ item.result.original_link }}</p>
         <hr>
         <p class="shortlink">{{ item.result.short_link }}</p>
-        <button (click)="copylink(item.result.short_link, btn)" #btn>{{value}}</button>
+        <input type="submit" [value]="value" (click)="copylink(item.result.short_link, btn)" #btn>
       </div>
     </article>
 

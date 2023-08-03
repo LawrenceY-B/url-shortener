@@ -24,11 +24,11 @@ export class AppComponent implements OnInit {
       this.results = JSON.parse(localStorage.getItem('results') || '{}');
     });
   }
-  copylink(link: string, style:HTMLElement) {
-    this.value = 'Copied';
+  copylink(link: string, style:HTMLInputElement) {
+    style.value='Copied!'
     style.style.backgroundColor = 'hsl(257, 27%, 26%)';
     setTimeout(() => {
-      this.value = 'Copy';
+      style.value='Copy'
       style.style.backgroundColor = 'var(--Cyan)';
       
     }, 3000);
