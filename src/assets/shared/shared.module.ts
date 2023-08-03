@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './lib/header/header.component';
 import { FooterComponent } from './lib/footer/footer.component';
-import { ShortenComponent } from './lib/shorten/shorten.component';
 import { CardComponent } from './lib/card/card.component';
 import { FormsModule } from '@angular/forms';
 
@@ -12,7 +11,6 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    ShortenComponent,
     CardComponent
   ],
   imports: [
@@ -22,7 +20,6 @@ import { FormsModule } from '@angular/forms';
   exports:[
     HeaderComponent,
     FooterComponent,
-    ShortenComponent,
     CardComponent
   ]
 })

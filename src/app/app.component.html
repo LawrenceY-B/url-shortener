@@ -13,14 +13,26 @@
       <img src="assets/Images/illustration-working.svg" alt="" srcset="" />
     </div>
   </section>
+  <section class="container">
+    <div class="input-container">
+        <input type="url" name="" placeholder="Shorten a link here" id="" [(ngModel)]="url" >
+        <input type="submit" value="Shorten it!" (click)="saveUrl(url)">
+    </div>
+    <!-- <div *ngIf="url.invalid && (url.dirty || url.touched)">
+      <div *ngIf="url.errors?.['required']">
+        Name is required.
+      </div>
+    </div> -->
+    </section>
 
-  <app-shorten></app-shorten>
-  <section class="shortener-container" (userData)="(results)">
+  <section class="shortener-container">
+   
     <article *ngFor="let item of results">
       <div class="urlbox">
         <p>{{ item.result.original_link }}</p>
-        <p>{{ item.result.short_link }}</p>
-        <button>Copy</button>
+        <hr>
+        <p class="shortlink">{{ item.result.short_link }}</p>
+        <button (click)="copylink(item.result.short_link, btn)" #btn>{{value}}</button>
       </div>
     </article>
 

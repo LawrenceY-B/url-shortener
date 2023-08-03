@@ -6,6 +6,9 @@ nav {
   width: 100%;
   align-items: center;
   padding-left: 40px;
+  hr{
+    display: none;
+  }
 
   p {
     color: var(--Grayish_Violet);
@@ -27,19 +30,20 @@ nav {
     width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .links {
-      width: 100%;
+      width: 25%;
       display: inline-flex;
       justify-content: space-evenly;
       align-items: flex-start;
     }
     span {
-      width: 40%;
+      width: 20%;
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin-right: 50px;
     }
   }
 
@@ -74,28 +78,42 @@ nav {
         width: 98%;
         justify-content: space-between;
         p{color: #fff;}
+        hr{
+          display: block;
+          height: 2px;
+          border: none;
+          border-radius: 5px;
+          width: 90%;
+          background-color: var(--Gray);
+          margin-bottom: 30px;
+        }
   .menu {
     display: none;
     z-index: 2;
     position: absolute;
     top: 40px;
+    left: 5%;
     background-color: var(--Dark-Violet);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 10px;
     .links {
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
       height: 50%;
       width: 100%;
-      padding: 20px 0px;
     
     }
     span{
         width: 100%;
+
         display: flex;
-        justify-content: space-around;
+        gap:10px;
+        justify-content: center;
         align-items: center;
-        flex-direction: column
+        flex-direction: column;
+        margin:0px;
     }
   }
 
